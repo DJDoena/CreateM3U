@@ -1,7 +1,6 @@
 namespace DoenaSoft.PlayList
 {
     using System;
-    using System.Collections.Generic;
     using System.IO;
     using System.Linq;
 
@@ -9,35 +8,27 @@ namespace DoenaSoft.PlayList
     {
         public static void Main(string[] args)
         {
-            if (args == null || args.Length == 0 || !Directory.Exists(args[0]))
+            var rootFolder = Helper.GetRootFolder(args);
+
+            if (rootFolder == null)
             {
-                Console.WriteLine("No path provided. Using current directory.");
+                Console.WriteLine($"'{args[0]}' does not exist. Press <Enter> to exit.");
+                Console.ReadLine();
 
-                if (args == null || args.Length == 0)
-                {
-                    args = new[] { "." };
-                }
-                else
-                {
-                    var temp = new List<string>(args);
-
-                    temp.Insert(0, ".");
-
-                    args = temp.ToArray();
-                }
+                return;
             }
 
-            var list = (new DirectoryInfo(args[0])).GetDirectories("*", SearchOption.AllDirectories).ToList();
+            var folders = rootFolder.GetDirectories("*", SearchOption.AllDirectories).ToList();
 
-            list.Sort((left, right) => left.FullName.CompareTo(right.FullName));
+            folders.Sort((left, right) => left.FullName.CompareTo(right.FullName));
 
-            foreach (var di in list)
+            foreach (var folder in folders)
             {
-                var fis = di.GetFiles("*.mp3", SearchOption.TopDirectoryOnly);
+                var files = folder.GetFiles("*.mp3", SearchOption.TopDirectoryOnly);
 
-                if (fis.Length > 0)
+                if (files.Length > 0)
                 {
-                    Playlist.ProcessDirectory(Playlist.CheckForIndividualNames(args), di, Settings.Default.MusicRootDirectoryName);
+                    Helper.ProcessFolder(args, folder, Settings.Default.MusicRootDirectoryName);
                 }
             }
 

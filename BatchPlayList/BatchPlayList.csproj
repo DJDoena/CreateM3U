@@ -15,22 +15,22 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Compile Include="..\PlayList\Playlist.cs" Link="Playlist.cs" />
-		<Compile Include="..\PlayList\Settings.Designer.cs" Link="Settings.Designer.cs" />
+		<Compile Include="..\PlayList\Helper.cs" Link="Helper.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<Compile Update="..\PlayList\Settings.Designer.cs">
-			<DesignTimeSharedInput>True</DesignTimeSharedInput>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>Settings.settings</DependentUpon>
-		</Compile>
+	  <Compile Update="Settings.Designer.cs">
+	    <DesignTimeSharedInput>True</DesignTimeSharedInput>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Settings.settings</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="..\PlayList\Settings.settings" Link="Settings.settings">
-			<Generator>SettingsSingleFileGenerator</Generator>
-		</None>
+	  <None Update="Settings.settings">
+	    <Generator>SettingsSingleFileGenerator</Generator>
+	    <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+	  </None>
 	</ItemGroup>
 
 </Project>
