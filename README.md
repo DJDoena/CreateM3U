@@ -1,11 +1,11 @@
 # CreateM3U
 
-Why not just "dir *.mp3 /b > !playlist.m3u"?
-Because it can't deal with German umlauts.
-
-Note: 
-The code for the individual playlist names was written with such a folder structure in mind:
-
+Why not just
+<pre>dir *.mp3 /b > !playlist.m3u
+</pre>? Because it can't deal with German umlauts.<br/>
+<br/>
+Note: <br/>
+The code for the individual playlist names was written with such a folder structure in mind:<br/>
 <pre>
 Artist
   Album Name
