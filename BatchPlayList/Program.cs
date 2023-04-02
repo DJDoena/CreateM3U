@@ -4,7 +4,7 @@ namespace DoenaSoft.PlayList
     using System.IO;
     using System.Linq;
 
-    public static class BatchPlaylist
+    public static class Program
     {
         public static void Main(string[] args)
         {

@@ -9,16 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchPlayList", "BatchPlayL
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{30AB6093-AC34-43B4-946C-2B7669B76655}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{30AB6093-AC34-43B4-946C-2B7669B76655}.Debug|Any CPU.Build.0 = Debug|x64
 		{30AB6093-AC34-43B4-946C-2B7669B76655}.Debug|x64.ActiveCfg = Debug|x64
 		{30AB6093-AC34-43B4-946C-2B7669B76655}.Debug|x64.Build.0 = Debug|x64
-		{2DD438BD-F360-439A-99A8-9B91E1A477BE}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{2DD438BD-F360-439A-99A8-9B91E1A477BE}.Debug|Any CPU.Build.0 = Debug|x64
 		{2DD438BD-F360-439A-99A8-9B91E1A477BE}.Debug|x64.ActiveCfg = Debug|x64
 		{2DD438BD-F360-439A-99A8-9B91E1A477BE}.Debug|x64.Build.0 = Debug|x64
 	EndGlobalSection

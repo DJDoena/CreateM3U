@@ -9,10 +9,6 @@
 		<Platforms>x64</Platforms>
 	</PropertyGroup>
 
-	<PropertyGroup>
-		<DebugType>none</DebugType>
-	</PropertyGroup>
-
 	<ItemGroup>
 		<Compile Update="Settings.Designer.cs">
 			<DesignTimeSharedInput>True</DesignTimeSharedInput>

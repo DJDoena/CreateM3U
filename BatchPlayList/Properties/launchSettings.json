@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BatchPlayList": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\OneDrive\\Music\\Soundtracks\\Der Herr der Ringe\" /in"
+    }
+  }
+}

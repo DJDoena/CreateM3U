@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PlayList": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\OneDrive\\Music\\Soundtracks\\Der Herr der Ringe\\Der Herr der Ringe 1 - Die Gefährten (The Complete Recordings)\" /in"
+    }
+  }
+}
